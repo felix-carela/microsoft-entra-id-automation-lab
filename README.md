@@ -152,7 +152,6 @@ The report included:
 
 - Display name
 - User principal name
-- Account enabled status
 
 Example:
 
@@ -160,7 +159,7 @@ Example:
 $Desktop = [Environment]::GetFolderPath("Desktop")
 
 Get-MgUser -All |
-Select-Object DisplayName, UserPrincipalName, AccountEnabled |
+Select-Object DisplayName, UserPrincipalName |
 Sort-Object DisplayName |
 Export-Csv "$Desktop\Entra-User-Inventory.csv" -NoTypeInformation
 ```
