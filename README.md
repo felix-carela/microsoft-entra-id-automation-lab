@@ -205,11 +205,11 @@ After testing the workflow, the lab account was re-enabled.
 
 ## Security Considerations
 
-During the Microsoft Graph authentication portion of the lab, Microsoft Entra Security Defaults temporarily prevented Microsoft Graph Command Line Tools authentication.
+This lab followed a least-privilege approach when assigning Microsoft Entra administrative roles and Microsoft Graph permissions.
 
-Security Defaults were temporarily disabled for troubleshooting and Graph testing, then **re-enabled after the lab work was completed**.
+A dedicated cloud administrator account was used for Microsoft Graph administration instead of relying on a personal external identity. Administrative access was limited to the permissions required for the tasks being performed.
 
-The project also used a dedicated cloud administrator account for Microsoft Graph administration rather than relying on a personal external identity.
+Microsoft Graph delegated permissions were used for user and group management, and sensitive information such as passwords, tenant identifiers, and personal account details was excluded from the public GitHub documentation.
 
 ---
 
